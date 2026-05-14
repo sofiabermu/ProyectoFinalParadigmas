@@ -1,0 +1,5 @@
+com\kepler\atlas\PriorityClassifier.class
+com\kepler\atlas\AtlasMain.class
+com\kepler\atlas\TcpServer.class
+com\kepler\atlas\RestServer.class
+com\kepler\atlas\AgencyRegistry.class

@@ -1,0 +1,26 @@
+services:
+  mysql:
+    image: mysql:8
+    container_name: kepler_mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-kepler_root_2026}
+      MYSQL_DATABASE: ${MYSQL_DB:-kepler}
+      MYSQL_USER: ${MYSQL_USER:-kepler}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-kepler_dev_2026}
+    ports:
+      - "3307:3306"
+    volumes:
+      - kepler_mysql_data:/var/lib/mysql
+    command: >
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_unicode_ci
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "kepler", "-pkepler_dev_2026"]
+      interval: 5s
+      timeout: 10s
+      retries: 10
+
+volumes:
+  kepler_mysql_data:
+    driver: local

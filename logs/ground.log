@@ -1,0 +1,14 @@
+[2026-05-13 23:33:46.60616] [26068] [info] Listening at "http://*:5000"
+[2026-05-13 23:33:46.83241] [26068] [trace] [53ipRAvOF8KO] GET "/api/summary/ping"
+[2026-05-13 23:33:46.83288] [26068] [trace] [53ipRAvOF8KO] Routing to a callback
+[2026-05-13 23:33:46.83569] [26068] [trace] [53ipRAvOF8KO] 404 Not Found (0.003273s, 305.530/s)
+[2026-05-13 23:34:13.12011] [26068] [trace] [o0vIRTotKuON] POST "/api/events"
+[2026-05-13 23:34:13.12043] [26068] [trace] [o0vIRTotKuON] Routing to a callback
+[2026-05-13 23:34:13.13798] [26068] [trace] [o0vIRTotKuON] 201 Created (0.017849s, 56.026/s)
+[2026-05-13 23:34:13.27384] [26068] [trace] [s5HRlR9_U1TM] POST "/api/events"
+[2026-05-13 23:34:13.27405] [26068] [trace] [s5HRlR9_U1TM] Routing to a callback
+[2026-05-13 23:34:13.28689] [26068] [trace] [s5HRlR9_U1TM] 201 Created (0.013014s, 76.840/s)
+[2026-05-13 23:34:16.77766] [26068] [trace] [Ha_e-SL6liwv] GET "/api/summary/VOY-IX-KEPLER442"
+[2026-05-13 23:34:16.77803] [26068] [trace] [Ha_e-SL6liwv] Routing to a callback
+[2026-05-13 23:34:16.78453] [26068] [trace] [Ha_e-SL6liwv] 200 OK (0.006831s, 146.391/s)
+Terminating on signal SIGHUP(1)
